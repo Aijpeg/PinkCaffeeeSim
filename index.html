@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Островное кафе 3D</title>
+<title>Кото-кафе 67</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍃%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -329,7 +329,7 @@ function render(){
   var h="",ms=Object.keys(G.mast).length,pl=G.s==="play";
   $("hud").hidden=!pl;$("bub").hidden=!pl;
   if(G.s==="start"){
-    h='<div class="panel"><h1>Островное кафе 3D</h1><p>Гости называют заказ, а ты собираешь его по памяти. Крути сцену, потянув её пальцем или мышью.</p><div class="row">'
+    h='<div class="panel"><h1>Кото-кафе 67</h1><p>Гости называют заказ, а ты собираешь его по памяти. Крути сцену, потянув её пальцем или мышью.</p><div class="row">'
      +[["b","Бар"],["k","Кухня"],["a","Всё меню"]].map(function(x){return '<button class="'+(G.mode===x[0]?'on':'')+'" onclick="setMode(\''+x[0]+'\')">'+x[1]+'</button>'}).join("")
      +'</div><p style="color:var(--mute)">Освоено позиций: '+ms+' из '+M.length+'<br>'+ic("flower",3)+' Рекорд серии: '+G.best+' '+ic("bell",2)+'</p><button class="cta" onclick="brief()">Открыть кафе</button><div style="height:8px"></div><button class="cta sec" onclick="tech(null)">Тех. карта</button></div>';
   }else if(G.s==="brief"){
